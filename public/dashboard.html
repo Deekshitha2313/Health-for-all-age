@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard • Health for All Ages</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 style="margin-right:auto">Your Dashboard</h1>
+      <a href="/">Home</a>
+      <a href="/login.html" id="loginLink">Login</a>
+      <button class="btn" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+  <main class="container grid grid-2">
+    <div class="card">
+      <h2>Book Appointment</h2>
+      <form id="apptForm">
+        <input class="input" name="doctor_name" placeholder="Doctor's Name" required />
+        <br/><br/>
+        <input class="input" name="date" type="date" required />
+        <br/><br/>
+        <input class="input" name="time" type="time" required />
+        <br/><br/>
+        <input class="input" name="reason" placeholder="Reason (optional)" />
+        <br/><br/>
+        <button class="btn btn-primary" type="submit">Book</button>
+      </form>
+    </div>
+    <div class="card">
+      <h2>Your Appointments</h2>
+      <div id="appts"></div>
+    </div>
+  </main>
+  <footer>© <span id="year"></span> Health for All Ages</footer>
+  <script src="/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login • Health for All Ages</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 style="margin-right:auto">Health for All Ages</h1>
+      <a href="/">Home</a>
+    </div>
+  </header>
+  <main class="container grid grid-2">
+    <div class="card">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input class="input" name="email" placeholder="Email" type="email" required />
+        <br/><br/>
+        <input class="input" name="password" placeholder="Password" type="password" required />
+        <br/><br/>
+        <button class="btn btn-primary" type="submit">Login</button>
+      </form>
+    </div>
+    <div class="card">
+      <h2>Create Account</h2>
+      <form id="registerForm">
+        <input class="input" name="name" placeholder="Full name" required />
+        <br/><br/>
+        <input class="input" name="email" placeholder="Email" type="email" required />
+        <br/><br/>
+        <input class="input" name="password" placeholder="Password" type="password" required />
+        <br/><br/>
+        <button class="btn btn-secondary" type="submit">Register</button>
+      </form>
+    </div>
+  </main>
+  <footer>© <span id="year"></span> Health for All Ages</footer>
+  <script src="/main.js" defer></script>
+</body>
+</html>
